@@ -20,6 +20,7 @@ Accesble and easy to use page with many information about the weather
   *The github url:https://github.com/bernabasa/Weather-Dashboard
 
 ## Screenshots
+
 ![](assets/images/Screenshot 2022-06-29 205646.png)
 
 
