@@ -14,13 +14,13 @@ Accesble and easy to use page with many information about the weather
 
  ## URL'S
  
-  *The built web:
+  *The built web:https://bernabasa.github.io/Weather-Dashboard/
 
 
   *The github url:https://github.com/bernabasa/Weather-Dashboard
 
 ## Screenshots
-![](assets/images/Screenshot 2022-06-29 205646.png)
+![](assets/images/
 
 
 
