@@ -17,9 +17,10 @@ Accesble and easy to use page with many information about the weather
   *The built web:
 
 
-  The github url:
+  *The github url:https://github.com/bernabasa/Weather-Dashboard
 
 ## Screenshots
+![](assets/images)
 
 
 
