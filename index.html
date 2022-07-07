@@ -5,73 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Weather Map</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>weather Dashboard</title>
 </head>
-
 <body>
-    
-    <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h3 w-100 text-center">Weather Map</span>
-    </nav>
+    <div>
+        <h1 class="title is-size-1 is-size-1-mobile is-size-1-desktop is-size-1-widescreen has-text-weight-bold">weather Dashboard</h1>
+    </div>
 
-    <div class="container">
+    <div id="search-container" class="container">
         <div class="row">
-
-            
-            <div class="col-12 col-md-3 bg-light mt-3">
-                
+            <div>
                 <form id="city-search">
-                    <label for="city-input" class="my-1">Search for a city:</label>
-                    <div class="input-group mb-3">
-                       
-                        <input id="city-input" type="text" class="form-control" placeholder="search" />
+                    <!-- <label for="city-input" class="city-text my-1 column is-centered is-mobile is-multiline centerstyle is-full">Search for a city:</label> -->
+                    <div class="input-group centerstyle is-full">
+                        <input id="city-input" type="text" class="form-control column is-centered is-mobile" placeholder="Search for a City:" />
                         <div class="input-group-append">
-                           
-                            <button id="searchBtn" class="btn btn-primary" type="submit">
-                                <i class="bi bi-search"></i>
+                            <button id="searchBtn" class="" type="submit">
+                                <i class="bi bi-search column is-centered is-mobile is-multiline centerstyle is-full">Search</i>
                             </button>
                         </div>
+                        <button id="clearHistory" class="btn btn-primary column is-mobile is-tablet is-centered centerstyle is-full" type="button">Clear History</button>
+
                     </div>
+
                 </form>
+                <!-- <button id="clearHistory" class="btn btn-primary column is-centered centerstyle is-full" type="button">Clear History</button> -->
                 
-                <button id="clearHistory" class="btn btn-primary mb-3 col-12 col-md-12" type="button">Clear History</button>
-                
-                
-                <div id="history" class="col-12 col-md 3 bg-light border-top mt-2 pt-2">
+                <div id="history" class="col-12 col-md 3 bg-light border-top mt-2 pt-2 columns">
                 </div>
             </div>
                
                 <div id="currentForecast" class="col-12 col-md-8 pt-4 mt-3">
                     <span id="cityName"></span></h4>
                 </div>
-
-                
-                <div id="fiveDayForecast" class="row">
-                    
-                </div>
         </div>
     </div>
+ </div>
 
 
-    
-    <footer class="bg-light text-center p-2">
-        Created with 
-        <a href="https://openweathermap.org/api/one-call-api" target="blank">OneCall API</a>  
-        from <a href="https://openweathermap.org/" target="blank">OpenWeather</a> &copy;
-    </footer>
+ <div id="api">
+        <!--Weather Api -->
+        <div id="weatherapibox">
+        
+            
+            <div>
 
-    <!-- jquery -->
+                <div class="columns is-centered is-mobile is-multiline centerstyle">
+
+                    <div id="weather-api" class="column">
+                        
+                    </div>
+                    
+                    <div id="fiveDayForecast" class="columns weatherCardContainer">
+                
+                    </div>
+                    
+                    
+                </div>
+            </div>
+      </div>
+        
+        <div class="sunCity is-size-1 is-size-1-mobile is-size-1-desktop is-size-1-widescreen has-text-weight-bold"></div>
+        <div id="sun-api" class="sunCardContainer columns is-multiline">
+         
+            
+            
+            
+            
+            
+     </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/api.js"></script>
 </body>
 </html>
