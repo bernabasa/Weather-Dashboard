@@ -21,7 +21,7 @@ Accesble and easy to use page with many information about the weather
 
 ## Screenshots
 
-![](assets/images/Screenshot 2022-06-29 205646.png)
+![](assets/images/Screenshot%202022-07-06%20235027.png)
 
 
 
